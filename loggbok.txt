@@ -1,0 +1,27 @@
+
+Mall för loggbok
+För att jag ska kunna följa ditt arbete så måste du skriva loggbok.
+Loggboken ska fyllas i varje gång du arbetar med någonting som rör projektet.
+Det är fullt naturligt att du gör mer arbete vissa dagar och mindre andra dagar. Nämn detta i
+loggboken i så fall. Därför behövs också en tidsplan så att du ser att du hinner med din del av det
+arbete som ni i gruppen har planerat.
+Följ denna mall
+• Dag:
+• Tidsåtgång:
+• Mål för dagen:
+• Hur nås målen:
+• Hur gick dagens arbete?
+• Uppföljning av dagens arbete:
+• Att ta upp vid nästa handledningstillfälle:
+Exempel
+Vecka: Tisdag vecka 38
+Tidsåtgång: 1,5 timmar
+Mål för dagen: Skriva klart grunden för vår dynamiska webbsida.
+Hur nås målen: Arbeta effektivt och med rätt verktyg.
+Hur gick dagens arbete? Jag blev nästan klar med webbsidan, men React funkar inte som jag
+vill.
+Uppföljning av dagens arbete: Jag behöver läsa och lära mig mer om React. Be gruppen om
+hjälp för någon av gruppmedlemmarna kan kanske React bättre än vad jag kan.
+Att ta upp vid nästa handledningstillfälle: Fråga handledaren om bra resurser för att lära mig
+mer om React. Handledaren kanske kan hjälpa mig med mitt problem, om inte gruppen har en
+lösning.
