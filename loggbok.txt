@@ -1,27 +1,50 @@
-
-Mall för loggbok
-För att jag ska kunna följa ditt arbete så måste du skriva loggbok.
-Loggboken ska fyllas i varje gång du arbetar med någonting som rör projektet.
-Det är fullt naturligt att du gör mer arbete vissa dagar och mindre andra dagar. Nämn detta i
-loggboken i så fall. Därför behövs också en tidsplan så att du ser att du hinner med din del av det
-arbete som ni i gruppen har planerat.
-Följ denna mall
-• Dag:
+LOGGBOK
+[MALL]
 • Tidsåtgång:
 • Mål för dagen:
 • Hur nås målen:
 • Hur gick dagens arbete?
 • Uppföljning av dagens arbete:
 • Att ta upp vid nästa handledningstillfälle:
-Exempel
-Vecka: Tisdag vecka 38
-Tidsåtgång: 1,5 timmar
-Mål för dagen: Skriva klart grunden för vår dynamiska webbsida.
-Hur nås målen: Arbeta effektivt och med rätt verktyg.
-Hur gick dagens arbete? Jag blev nästan klar med webbsidan, men React funkar inte som jag
-vill.
-Uppföljning av dagens arbete: Jag behöver läsa och lära mig mer om React. Be gruppen om
-hjälp för någon av gruppmedlemmarna kan kanske React bättre än vad jag kan.
-Att ta upp vid nästa handledningstillfälle: Fråga handledaren om bra resurser för att lära mig
-mer om React. Handledaren kanske kan hjälpa mig med mitt problem, om inte gruppen har en
-lösning.
+
+START:
+
+	Vecka:41
+Tidsåtgång: 40+ timmar
+Mål för veckan: 
+*Ta reda på vilka tekniker som krävs för att lösa uppgiften samt göra mindre genomgångar för varje segment. 
+*Göra alla inlämningsuppgifter, se till att inte missa någon. Kan även tillkomma spontan-möten.
+
+
+	Hur nås målen: 
+Använda Udemy, youtube och canvas.
+
+	Hur gick veckans arbete? 
+Har tittat på mycket videos och fått koda en hel del känner jag. Men inte lagt en rad på själva huvudprojektet.
+Orimligt krav att jag ska sätta mig in i linux om jag vill ha en databas....
+
+	Uppföljning av Veckans arbete: 
+Kom inte så långt som jag trodde att jag skulle med SignalR genomgången. Målet var att ha ett större projekt klart för att sen ha som mall.
+
+
+	Följande hann bli färdigt:
+loggboken
+* UseCase
+*skiss
+* Readmee
+*genomgång av signalR från microsoft (https://learn.microsoft.com/sv-se/aspnet/core/tutorials/signalr?view=aspnetcore-8.0&tabs=visual-studio)
+*egen chatt prototyp
+*påbörjat Udemy kurs i SignalR: https://www.udemy.com/course/signalr-the-complete-guide/learn 
+(se githubRepo: https://github.com/ElinSjogren/SignalRSample.git commits och merges). Kan användas som bibliotek eller mall sedan i projektet.
+Sett vilka väder-api:er som finns. 
+
+Kvar efter denna veckas inlämningsuppgifter:
+* API med kund- och leverantörsregister
+*frontend - vilka komponenter behövs: Vad för ramverk?
+	-interface*2 för kund leverantör med respektive chat.
+	-searchkomponents
+	-separat weather-page
+* ta reda på om det verkligen är smidigt med chatt utan inloggning. verkar inte så, kom igång med inloggningsfunktion och en databas. 
+
+
+	
