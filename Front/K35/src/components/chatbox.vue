@@ -1,10 +1,12 @@
 <template>
   <div id="chatBox">
     <div id="sendBox">
+      <label for="username">Användarnamn: </label>
+      <input id="username" type="text" v-model="userName">
       <textarea id="messageText" v-model="text">
       </textarea>
       <span>{{ getDateToday }}</span>
-      <button v-if="text" class="btn" @click="sendText">Skicka</button>
+      <button v-if="text" class="btn sendbutton" @click="sendText">Skicka</button>
     </div>
     <div id="allMessages" v-for="m in messages">
       <message :message="m"></message>
@@ -20,6 +22,7 @@ export default{
     return {
       text:"",
       messages: [],
+      userName:"",
     }
   }, 
   computed:{
@@ -32,7 +35,7 @@ export default{
   methods:{
     sendText(){
       if(this.text){
-        signalRConfigs.sendMessage("anonymous", this.text, this.getDateToday);
+        signalRConfigs.sendMessage(this.userName, this.text, this.getDateToday);
         this.text = "";
       }
     }

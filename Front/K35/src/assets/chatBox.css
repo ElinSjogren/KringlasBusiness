@@ -9,3 +9,15 @@
   border-radius: 15px;
   margin:auto;
 }
+#messageText{
+  width: 70vw;
+  margin:1rem;
+}
+.sendbutton{
+  background: linear-gradient(green, lime);
+  margin: 4px;
+}
+.sendbutton:hover{
+  background: white;
+  transition: 0.5s;
+}

@@ -4,8 +4,8 @@ import signalRConfigs from '../../signalRConfigs';
 export const useChatStore = defineStore('chat', {
   state: () => ({
     messages: [
-      {message:"Leverandes sist var suverän", user: "Ladybug89", date: "2004-03"},
-      {message:"Finns det refill på blomjorden", user: "Lena_N", date: "2007-09"},
+      {message:"Leveransen sist var suverän", user: "Ladybug89", date: "2024 - October - 11"}, 
+      {message:"Finns det refill på blomjorden", user: "Lena_N", date: "2024 - October - 13"},
 
     ], 
     user: '',    
@@ -18,7 +18,7 @@ export const useChatStore = defineStore('chat', {
       this.messages.push({user, message, date});
     },
       async reciveMessage() {
-          await SignalRService.startConnection((user, message) => {
+          await signalRConfigs.startConnection((user, message) => {
             this.messages.push({ user, message });
           });
           this.isConnected = SignalRService.isConnected;
