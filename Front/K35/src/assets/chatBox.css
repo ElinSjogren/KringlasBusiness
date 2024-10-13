@@ -1,0 +1,7 @@
+#chatBox{
+  border: rgb(0, 128, 79) solid 2px;
+  border-radius: 5px;
+  width: 80vw;
+  min-height: 30vh;
+  margin:auto;
+}
