@@ -8,7 +8,6 @@
   </div>
 </template>
 <script>
-import chatbox from './components/chatbox.vue';
 export default{
   props:['text', 'from', 'date'],
   data(){

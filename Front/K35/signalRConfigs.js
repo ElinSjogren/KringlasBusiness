@@ -21,6 +21,7 @@ class SignalRService {
         }
 
         this.connection.on('ReceiveMessage', (user, message) => {
+
             console.log(`Message from ${user}: ${message}`);
         });
     }

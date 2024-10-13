@@ -6,11 +6,8 @@
       </textarea>
       <button v-if="text" class="btn" @click="sendText">Skicka</button>
     </div>
-    <div id="recived">
+    <div id="allMessages">
 
-    </div>
-    <div id="sended">
-      
     </div>
   </div>
 </template>
