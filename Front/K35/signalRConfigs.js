@@ -1,5 +1,5 @@
 import * as signalR from '@microsoft/signalr';
-
+import { useChatStore } from '@/stores/useChatStore';
 class SignalRService {
     constructor() {
         this.connection = null;
@@ -20,15 +20,17 @@ class SignalRService {
             console.error('Error while starting connection: ', error);
         }
 
-        this.connection.on('ReceiveMessage', (user, message) => {
-
+        this.connection.on('ReceiveMessage', (user, message, date) => {
+            
             console.log(`Message from ${user}: ${message}`);
+            const chatStore = useChatStore();
+            chatStore.addMessage(user, message, date);
         });
     }
 
-    async sendMessage(user, message) {
+    async sendMessage(user, message, date) {
         if (this.isConnected) {
-            await this.connection.invoke('SendMessage', user, message);
+            await this.connection.invoke('SendMessage', user, message, date);
         } else {
             console.error('Not connected to the SignalR hub');
         }

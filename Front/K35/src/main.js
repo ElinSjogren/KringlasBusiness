@@ -6,6 +6,9 @@ import App from './App.vue'
 import signalRConfigs from '../signalRConfigs'
 const app = createApp(App)
 
-app.use(createPinia())
+const pinia = createPinia()
+
+app.use(pinia);
+
 signalRConfigs.startConnection()
 app.mount('#app')

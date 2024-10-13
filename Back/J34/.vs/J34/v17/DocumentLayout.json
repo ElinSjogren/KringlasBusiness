@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Elins Dator\\Documents\\Programmering2024\\Klientprogrammering\\KringlasBusiness\\KringlasBusiness\\Back\\J34\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{87AD07EC-F703-45BB-8704-2AA0D13D26AD}|J34\\J34.csproj|c:\\users\\elins dator\\documents\\programmering2024\\klientprogrammering\\kringlasbusiness\\kringlasbusiness\\back\\j34\\j34\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87AD07EC-F703-45BB-8704-2AA0D13D26AD}|J34\\J34.csproj|solutionrelative:j34\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{87AD07EC-F703-45BB-8704-2AA0D13D26AD}|J34\\J34.csproj|c:\\users\\elins dator\\documents\\programmering2024\\klientprogrammering\\kringlasbusiness\\kringlasbusiness\\back\\j34\\j34\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{87AD07EC-F703-45BB-8704-2AA0D13D26AD}|J34\\J34.csproj|solutionrelative:j34\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87AD07EC-F703-45BB-8704-2AA0D13D26AD}|J34\\J34.csproj|c:\\users\\elins dator\\documents\\programmering2024\\klientprogrammering\\kringlasbusiness\\kringlasbusiness\\back\\j34\\j34\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87AD07EC-F703-45BB-8704-2AA0D13D26AD}|J34\\J34.csproj|solutionrelative:j34\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,24 +18,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ChatHub.cs",
               "DocumentMoniker": "C:\\Users\\Elins Dator\\Documents\\Programmering2024\\Klientprogrammering\\KringlasBusiness\\KringlasBusiness\\Back\\J34\\J34\\Hubs\\ChatHub.cs",
               "RelativeDocumentMoniker": "J34\\Hubs\\ChatHub.cs",
               "ToolTip": "C:\\Users\\Elins Dator\\Documents\\Programmering2024\\Klientprogrammering\\KringlasBusiness\\KringlasBusiness\\Back\\J34\\J34\\Hubs\\ChatHub.cs",
               "RelativeToolTip": "J34\\Hubs\\ChatHub.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T12:13:01.55Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Elins Dator\\Documents\\Programmering2024\\Klientprogrammering\\KringlasBusiness\\KringlasBusiness\\Back\\J34\\J34\\Program.cs",
               "RelativeDocumentMoniker": "J34\\Program.cs",

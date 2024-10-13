@@ -1,20 +1,23 @@
 <template>
   <div id="message">
     <div id="innermessage">
-      <h5>{{ from }}</h5>
-      <p>{{ text }}</p>
-      <span>{{ date }}</span>
+      <h5>{{ message.user }}</h5>
+      <p>{{ message.message }}</p>
+      <span>{{ message.date }}</span>
     </div>
   </div>
 </template>
 <script>
 export default{
-  props:['text', 'from', 'date'],
+  props:['message'],
   data(){
     return {
-
+      
     }
   }, 
+  computed:{
+    
+  },
   components:{ }
 }
 

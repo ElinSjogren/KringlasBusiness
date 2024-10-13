@@ -6,10 +6,6 @@
   margin:auto;
 }
 #allMessages{
-  border: rgb(0, 128, 79) solid 2px;
-  border-radius: 5px;
-  width: 70vw;
-  min-height: 30vh;
+  border-radius: 15px;
   margin:auto;
-  background-color: rgb(58, 58, 58);
 }
