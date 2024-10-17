@@ -1,5 +1,5 @@
 <template>
-<select class="form-control">
+<select class="form-control" @change="setCustomer">
   <option value="" disabled selected>Select your option</option>
   <option v-for="customer in customersList" :value="customer">{{ customer.userName }} - {{ customer.userId }}</option>
 </select>
@@ -21,6 +21,14 @@ export default{
   },
   computed:{
     ...mapState(useCustomersStore, ['customersList']),
+  },
+  methods:{
+    setCustomer(select){
+      const selectedCustomer = select.target.value; 
+      if (selectedCustomer) {
+        store.setCustomer(selectedCustomer);
+      }
+    },
   },
   components:{ }
 }
