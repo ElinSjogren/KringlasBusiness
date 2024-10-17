@@ -2,6 +2,13 @@ body{
   color:rgb(39, 219, 120);
   background-color: rgb(51, 51, 51);
 }
-h1{
+h1, h2, h3{
   text-align: center;
+}
+
+@font-face { font-family: Alex-regular; 
+  src: url('@/assets/AlexBrush-Regular.ttf'); } 
+h1{
+font-family: Alex-regular;
+font-weight: 900;
 }
