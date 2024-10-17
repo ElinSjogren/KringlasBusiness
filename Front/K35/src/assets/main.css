@@ -12,3 +12,9 @@ h1{
 font-family: Alex-regular;
 font-weight: 900;
 }
+.generallbtn{
+  background-color: white;
+}
+.generallbtn:hover{
+  background-color: gray;;
+}

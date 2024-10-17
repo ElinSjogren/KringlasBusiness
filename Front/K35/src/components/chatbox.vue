@@ -1,8 +1,8 @@
 <template>
   <div id="chatBox">
     <div id="sendBox">
-      <label for="username">Användarnamn: </label>
-      <input id="username" type="text" v-model="userName" class="form-control">
+      <label for="senderId">Användarnamn: </label>
+      <input id="senderId" type="text" v-model="senderId" class="form-control">
       <label for="messageText">Text: </label>
       <textarea id="messageText" v-model="text" class="form-control">
       </textarea>
@@ -23,7 +23,7 @@ export default{
     return {
       text:"",
       messages: [],
-      userName:"",
+      senderId:"",
     }
   }, 
   computed:{
@@ -31,12 +31,13 @@ export default{
       const months = ["Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli", "Augusti", "September", "Oktober", "November", "December"];
       let date= new Date();
       return `${date.getFullYear()} - ${months[date.getMonth()]} - ${date.getDate()}`;
-    }
+    },
+    
   },
   methods:{
     sendText(){
       if(this.text){
-        signalRConfigs.sendMessage(this.userName, this.text, this.getDateToday);
+        signalRConfigs.sendMessage(this.senderId, this.text, this.getDateToday);
         this.text = "";
       }
     }
