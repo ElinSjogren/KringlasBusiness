@@ -2,6 +2,7 @@
   <div id="logedInComponent">
     <header>
       <h2>Skicka och ta emot meddelanden</h2>
+      <p>Välj vilken kund - Se senaste beställningar och chatta direkt.</p>
     </header>
     <Searchbox></Searchbox>
     <chatbox></chatbox>
