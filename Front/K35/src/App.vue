@@ -3,11 +3,12 @@
     <header>
       <h1>Kringlas business</h1>
     </header>
-  <chatbox></chatbox>
+    <chatbox></chatbox>
   </div>
 </template>
 <script>
 import chatbox from './components/chatbox.vue';
+import Searchbox from './components/Searchbox.vue';
 export default{
   data(){
     return {
@@ -15,7 +16,7 @@ export default{
     }
   }, 
   components:{
-    chatbox
+    chatbox, 
   }
 }
 </script>
