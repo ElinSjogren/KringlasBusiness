@@ -1,0 +1,99 @@
+{
+  "customers": [
+    {
+      "userId": "101",
+      "userName": "lizzis23",
+      "name": "Lisa Andersson",
+      "phone": "+46 70 123 45 67",
+      "address": "Blomstervägen 3, 123 45 Växjö",
+      "purchases": [
+        {
+          "totalAmount": 299.00,
+          "itemsCount": 3,
+          "date": "2024-03-10"
+        },
+        {
+          "totalAmount": 499.00,
+          "itemsCount": 5,
+          "date": "2024-05-22"
+        }
+      ]
+    },
+    {
+      "userId": "202",
+      "userName": "es87gotebarhhg",
+      "name": "Erik Svensson",
+      "phone": "+46 70 765 43 21",
+      "address": "Grönvägen 12, 543 21 Blomstad",
+      "purchases": [
+        {
+          "totalAmount": 199.00,
+          "itemsCount": 2,
+          "date": "2024-04-15"
+        },
+        {
+          "totalAmount": 699.00,
+          "itemsCount": 6,
+          "date": "2024-06-05"
+        },
+        {
+          "totalAmount": 349.00,
+          "itemsCount": 3,
+          "date": "2024-08-10"
+        }
+      ]
+    },
+    {
+      "userId": "303",
+      "userName": "nilsson74anna",
+      "name": "Anna Nilsson",
+      "phone": "+46 70 987 65 43",
+      "address": "Floravägen 25, 987 65 Växtby",
+      "purchases": [
+        {
+          "totalAmount": 399.00,
+          "itemsCount": 4,
+          "date": "2024-02-12"
+        }
+      ]
+    },
+    {
+      "userId": "404",
+      "userName": "johan_karlsson_89",
+      "name": "Johan Karlsson",
+      "phone": "+46 70 111 22 33",
+      "address": "Miljöstigen 8, 876 54 Grönköping",
+      "purchases": [
+        {
+          "totalAmount": 899.00,
+          "itemsCount": 7,
+          "date": "2024-01-10"
+        },
+        {
+          "totalAmount": 149.00,
+          "itemsCount": 1,
+          "date": "2024-07-20"
+        }
+      ]
+    },
+    {
+      "userId": "505",
+      "userName": "ma_lg",
+      "name": "Maria Lundgren",
+      "phone": "+46 70 222 33 44",
+      "address": "Naturstigen 10, 234 56 Blomstaden",
+      "purchases": [
+        {
+          "totalAmount": 249.00,
+          "itemsCount": 2,
+          "date": "2024-04-02"
+        },
+        {
+          "totalAmount": 549.00,
+          "itemsCount": 5,
+          "date": "2024-06-25"
+        }
+      ]
+    }
+  ]
+}

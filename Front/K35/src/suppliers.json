@@ -1,0 +1,59 @@
+{
+  "suppliers": [
+    {
+      "id": 1,
+      "name": "GreenGrowers AB",
+      "address": "Gröna Gatan 12, 123 45 Växköping",
+      "organizationNumber": "556123-4567",
+      "contactPerson": {
+        "name": "Anna Johansson",
+        "phone": "+46 70 123 45 67",
+        "email": "anna.johansson@greengrowers.se"
+      }
+    },
+    {
+      "id": 2,
+      "name": "PlantHaven",
+      "address": "Blomstervägen 34, 543 21 Blomby",
+      "organizationNumber": "556987-6543",
+      "contactPerson": {
+        "name": "Erik Blom",
+        "phone": "+46 70 765 43 21",
+        "email": "erik.blom@planthaven.com"
+      }
+    },
+    {
+      "id": 3,
+      "name": "EcoPlants",
+      "address": "Miljögränd 5, 987 65 Grönköping",
+      "organizationNumber": "556555-1234",
+      "contactPerson": {
+        "name": "Sara Lindgren",
+        "phone": "+46 70 111 22 33",
+        "email": "sara.lindgren@ecoplants.se"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Blomsterlandet",
+      "address": "Floravägen 7, 234 56 Växtby",
+      "organizationNumber": "556789-4321",
+      "contactPerson": {
+        "name": "Fredrik Svensson",
+        "phone": "+46 70 987 65 43",
+        "email": "fredrik.svensson@blomsterlandet.se"
+      }
+    },
+    {
+      "id": 5,
+      "name": "BotanicHouse",
+      "address": "Naturstigen 8, 876 54 Växtstad",
+      "organizationNumber": "556666-7777",
+      "contactPerson": {
+        "name": "Karin Östberg",
+        "phone": "+46 70 222 33 44",
+        "email": "karin.ostberg@botanichouse.com"
+      }
+    }
+  ]
+}
