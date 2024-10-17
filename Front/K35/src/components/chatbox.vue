@@ -2,8 +2,9 @@
   <div id="chatBox">
     <div id="sendBox">
       <label for="username">Användarnamn: </label>
-      <input id="username" type="text" v-model="userName">
-      <textarea id="messageText" v-model="text">
+      <input id="username" type="text" v-model="userName" class="form-control">
+      <label for="messageText">Text: </label>
+      <textarea id="messageText" v-model="text" class="form-control">
       </textarea>
       <span>{{ getDateToday }}</span>
       <button v-if="text" class="btn sendbutton" @click="sendText">Skicka</button>
