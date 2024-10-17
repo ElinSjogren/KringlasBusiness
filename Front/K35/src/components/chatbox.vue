@@ -1,6 +1,5 @@
 <template>
   <div id="chatBox">
-    <searchbox></searchbox>
     <div id="sendBox">
       <label for="username">Användarnamn: </label>
       <input id="username" type="text" v-model="userName" class="form-control">
@@ -19,7 +18,6 @@
 import { useChatStore } from '@/stores/useChatStore';
 import message from './message.vue';
 import signalRConfigs from '../../signalRConfigs';
-import Searchbox from './Searchbox.vue';
 export default{
   data(){
     return {
@@ -49,7 +47,6 @@ export default{
   },
   components:{
     message,
-    Searchbox
   }
 }
 </script>

@@ -3,20 +3,22 @@
     <header>
       <h1>Kringlas business</h1>
     </header>
-    <chatbox></chatbox>
+    <NotLogedIn v-if="!adminLogedIn"></NotLogedIn>
+    <LogedIn v-if="adminLogedIn"></LogedIn>
   </div>
 </template>
 <script>
-import chatbox from './components/chatbox.vue';
-import Searchbox from './components/Searchbox.vue';
+import LogedIn from './Layouts/LogedIn.vue';
+import NotLogedIn from './Layouts/NotLogedIn.vue';
 export default{
   data(){
     return {
-
+      adminLogedIn:false,
     }
   }, 
   components:{
-    chatbox, 
+    NotLogedIn, 
+    LogedIn
   }
 }
 </script>
