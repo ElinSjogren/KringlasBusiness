@@ -4,6 +4,8 @@
   width: 80vw;
   min-height: 30vh;
   margin:auto;
+  background:linear-gradient(white, rgb(211, 211, 211));
+  padding: 2rem;
 }
 #allMessages{
   border-radius: 15px;
@@ -20,4 +22,15 @@
 .sendbutton:hover{
   background: white;
   transition: 0.5s;
+}
+#message{
+  margin: 2px;
+  border: 2px gray solid;
+  padding: 1rem;
+  border-radius: 5px;
+}
+#sendBox{
+  border: 2px gray solid;
+  padding: 1rem;
+  border-radius: 5px;
 }

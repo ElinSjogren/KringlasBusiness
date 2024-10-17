@@ -22,14 +22,6 @@ export default{
 
 </script>
 <style scoped>
-#message{
-  max-width: 60vw;
-  background-color: rgb(255, 255, 193);
-  color: black;
-  margin: auto;
-  border: solid rgb(185, 177, 58) 2px;
-  border-radius: 5px;
-  padding: 5px;
-}
+
 
 </style>
