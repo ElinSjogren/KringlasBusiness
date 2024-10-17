@@ -4,8 +4,8 @@ import signalRConfigs from '../../signalRConfigs';
 export const useChatStore = defineStore('chat', {
   state: () => ({
     messages: [
-      {message:"Leveransen sist var suverän", user: "Ladybug89", date: "2024 - Oktober - 11"}, 
-      {message:"Finns det refill på blomjorden", user: "Lena_N", date: "2024 - Oktober - 13"},
+      {message:"Leveransen sist var suverän!", user: "Ladybug89", date: "2024 - Oktober - 11"}, 
+      {message:"Finns det refill på blomjorden?", user: "Lena_N", date: "2024 - Oktober - 13"},
 
     ], 
     user: '',    
