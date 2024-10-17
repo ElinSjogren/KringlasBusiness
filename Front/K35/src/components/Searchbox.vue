@@ -1,5 +1,5 @@
 <template>
-<select>
+<select class="form-control">
   <option value="" disabled selected>Select your option</option>
   <option v-for="customer in customersList" :value="customer">{{ customer.userName }} - {{ customer.userId }}</option>
 </select>
