@@ -28,7 +28,7 @@ export default{
   }, 
   computed:{
     getDateToday(){
-      const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      const months = ["Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli", "Augusti", "September", "Oktober", "November", "December"];
       let date= new Date();
       return `${date.getFullYear()} - ${months[date.getMonth()]} - ${date.getDate()}`;
     }
