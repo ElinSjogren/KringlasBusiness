@@ -1,11 +1,12 @@
 #chatBox{
-  border: rgb(0, 128, 79) solid 2px;
+  border: rgb(77, 160, 60) solid 2px;
   border-radius: 5px;
   width: 80vw;
   min-height: 30vh;
   margin:auto;
   background:linear-gradient(white, rgb(211, 211, 211));
   padding: 2rem;
+  color: green;;
 }
 #allMessages{
   border-radius: 15px;
@@ -13,21 +14,27 @@
 }
 
 .sendbutton{
-  background: linear-gradient(green, lime);
+  background: linear-gradient(rgb(122, 218, 44), rgb(207, 255, 130));
   margin: 4px;
+  color:white;
 }
 .sendbutton:hover{
-  background: white;
+  background:linear-gradient(rgb(180, 180, 180), rgb(255, 255, 255));
   transition: 0.5s;
+  color:black;
 }
 #message{
   margin: 2px;
-  border: 2px gray solid;
+  border: 2px rgb(188, 221, 138) solid;
   padding: 1rem;
   border-radius: 5px;
 }
 #sendBox{
-  border: 2px gray solid;
+  border: 2px rgb(154, 199, 124) solid;
   padding: 1rem;
   border-radius: 5px;
+}
+#innermessage{
+  display:flex;
+  justify-content: space-between;
 }

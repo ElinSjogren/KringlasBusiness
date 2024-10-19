@@ -1,13 +1,15 @@
 <template>
   <div id="chatBox">
     <div id="sendBox">
-      <label for="messageText">Text: </label>
-      <textarea id="messageText" v-model="text" class="form-control">
+      <label for="name">Namn:</label>
+      <input id="name" v-model="user" class="form-control">
+      <label for="messageContent">Text: </label>
+      <textarea id="messageContent" v-model="messageContent" class="form-control">
       </textarea>
       <span>{{ getDateToday }}</span>
-      <button v-if="text" class="btn sendbutton" @click="sendText">Skicka</button>
+      <button v-if="messageContent" class="btn sendbutton" @click="sendText">Skicka</button>
     </div>
-    <div id="allMessages" v-for="m in filteredMessages">
+    <div id="allMessages" v-for="m in messages">
       <message :message="m"></message>
     </div>
   </div>
@@ -16,14 +18,12 @@
 import { useChatStore } from '@/stores/useChatStore';
 import message from './message.vue';
 import signalRConfigs from '../../signalRConfigs';
-import { useCustomersStore } from '@/stores/useCustomerStore';
 export default{
   data(){
     return {
-      text:"",
+      messageContent:"",
       messages: [],
-      senderId:"",
-      reciverId:"",
+      user:"",
     }
   }, 
   computed:{
@@ -32,34 +32,20 @@ export default{
       let date= new Date();
       return `${date.getFullYear()} - ${months[date.getMonth()]} - ${date.getDate()}`;
     },
-    filteredMessages(){
-       return this.messages.filter((mess)=>{
-        return mess.reciverId == this.senderId || mess.senderId == this.senderId
-      })
-    },
   },
   methods:{
     sendText(){
-      if(this.text){
-        // get Sender Id, the user right now
-        const messageStore = useChatStore();
-        this.senderId=messageStore.user;
-        //get what customer to send too
-        const customerStore= useCustomersStore();
-        this.reciverId = customerStore.customer;
-        if(this.reciverId==null){
-          this.reciverId="admin";
-        }
-        console.log(this.reciverId, this.senderId, this.text, this.getDateToday);
-        signalRConfigs.sendMessage(this.reciverId, this.senderId,  this.text, this.getDateToday);
-        this.text = "";
+      if(this.messageContent){
+        console.log(this.user, this.messageContent, this.getDateToday);
+        signalRConfigs.SendMessageToAll(this.user, this.messageContent, this.getDateToday);
+        this.messageContent = "";
+        this.user="";
       }
     }
   },
   mounted(){
     const messageStore = useChatStore();
     this.messages = messageStore.messages;
-    this.senderId=messageStore.user;
   },
   components:{
     message,

@@ -3,24 +3,19 @@ import signalRConfigs from '../../signalRConfigs';
 
 export const useChatStore = defineStore('chat', {
   state: () => ({
-    messages: [
-      {reciverId:"admin" ,senderId:"es87gotebarhhg", content: "Leveransen sist var suverän!", timestamp: "2024 - Oktober - 11"}, 
-      {reciverId:"admin", senderId:"n74a", content: "Finns det refill på blomjorden?", timestamp: "2024 - Oktober - 13"},
-      
-    ], 
+    messages: [], 
     user: null,    
   }),
   actions:{
     setUser(name) {
-      localStorage.setItem("userName", name)
       this.user = name;
     },
-    addMessage(reciverId, senderId, content, timestamp){
-      this.messages.push({reciverId, senderId, content, timestamp});
+    addMessage(user, messageContent, date){
+      this.messages.push({user, messageContent, date});
     },
       async reciveMessage() {
-          await signalRConfigs.startConnection((message) => {
-            this.messages.push({ message });
+          await signalRConfigs.startConnection((user, messageContent, date) => {
+            this.addMessage( user, messageContent, date );
           });
           this.isConnected = SignalRService.isConnected;
       },

@@ -42,8 +42,7 @@
               "RelativeToolTip": "J34\\Model\\Weather.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T10:11:37.227Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T10:11:37.227Z"
             },
             {
               "$type": "Document",
@@ -53,7 +52,7 @@
               "RelativeDocumentMoniker": "J34\\Controller\\WeatherController.cs",
               "ToolTip": "C:\\Users\\Elins Dator\\Documents\\Programmering2024\\Klientprogrammering\\KringlasBusiness\\KringlasBusiness\\Back\\J34\\J34\\Controller\\WeatherController.cs",
               "RelativeToolTip": "J34\\Controller\\WeatherController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-19T10:10:11.603Z",
               "EditorCaption": ""
@@ -80,8 +79,7 @@
               "RelativeToolTip": "J34\\Hubs\\ChatHub.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T12:13:01.55Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T12:13:01.55Z"
             },
             {
               "$type": "Document",
@@ -93,8 +91,7 @@
               "RelativeToolTip": "J34\\Program.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAAACUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T11:50:11.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T11:50:11.826Z"
             }
           ]
         }

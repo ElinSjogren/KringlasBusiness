@@ -1,8 +1,8 @@
 <template>
   <div id="message">
     <div id="innermessage">
-      <h5>{{ message.senderId }}: <span>{{ message.timestamp }}</span></h5>
-      <p>{{ message.content }}</p>
+      <h6>{{ message.user }}: </h6>
+      <p>{{ message.messageContent }}<span>{{ message.date }}</span></p>
     </div>
   </div>
 </template>

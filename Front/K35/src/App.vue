@@ -3,61 +3,35 @@
     <header>
       <h1>Kringlas business</h1>
     </header>
-    <div id="miniLogInBox" v-if="!isLogedIn">
-      <input v-model="logedInAs" class="form-control">
-      <button v-if="logedInAs" class="btn generallbtn" @click="setUser">Välj användare</button>
-    </div>
-    <div id="logedInAsBox" v-if="isLogedIn">
-      <p>Inloggad som: {{this.user}}</p>
-      <button class="btn generallbtn" @click="logOut">Logga ut</button>
-    </div>
-    <NotLogedIn v-if="!adminLogedIn"></NotLogedIn>
-    <LogedIn v-if="adminLogedIn"></LogedIn>
+    <h4>Vädret:</h4>
+    <WeatherBox></WeatherBox>
+    <h4>Chat: </h4>
+    <Chatbox></Chatbox>
   </div>
 </template>
 <script>
-import { mapState } from 'pinia';
-import LogedIn from './Layouts/LogedIn.vue';
-import NotLogedIn from './Layouts/NotLogedIn.vue';
-import { useChatStore } from './stores/useChatStore';
+import Chatbox from './components/chatbox.vue';
+import WeatherBox from './components/WeatherBox.vue';
+import { useWeatherStore } from './stores/useWatherStore';
 export default{
   data(){
     return {
-      adminLogedIn:false,
-      logedInAs:""
+      weaters:[],
     }
   }, 
   methods:{
-    setUser(){
-      const userStore = useChatStore(); 
-      userStore.setUser(this.logedInAs);
-      this.adminLogedIn = this.logedInAs.toLowerCase() === 'admin';
-    },
-    logOut(){
-      const userStore = useChatStore(); 
-      userStore.setUser(null);
-      this.adminLogedIn = false;
-    }
-  },
-  computed:{
-    ...mapState(useChatStore, ['user']),
-    isLogedIn(){
-      return this.user !==null;
-    },
-  },
-  mounted(){
-    let storedName = localStorage.getItem("userName");
-    if(storedName){
-      const userStore = useChatStore();
-      userStore.setUser(storedName);
-      this.logedInAs=storedName
-      this.adminLogedIn = this.logedInAs.toLowerCase() === 'admin';
-    }
 
   },
+  computed:{
+
+  },  
+  mounted(){
+    const weatherStore = useWeatherStore();
+    weatherStore.getAllWeathers(); 
+  },
   components:{
-    NotLogedIn, 
-    LogedIn
+    Chatbox,
+    WeatherBox
   }
 }
 </script>

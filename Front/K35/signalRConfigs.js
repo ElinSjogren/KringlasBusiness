@@ -20,17 +20,17 @@ class SignalRService {
             console.error('Error while starting connection: ', error);
         }
 
-        this.connection.on('ReceiveMessage', (user, message, date) => {
+        this.connection.on('ReceiveMessage', (user, messageContent, date) => {
             
-            console.log(`Message came like this: ${user, message, date}`);
+            console.log(`Message came like this: ${user, messageContent, date}`);
             const chatStore = useChatStore();
-            chatStore.addMessage(reciverId, senderId, message, date);
+            chatStore.addMessage(user, messageContent, date);
         });
     }
 
-    async sendMessage(reciverId, senderId, message, date) {
+    async SendMessageToAll(user, messageContent, date) {
         if (this.isConnected) {
-            await this.connection.invoke('SendMessage', reciverId, senderId, message, date);
+            await this.connection.invoke('SendMessageToAll', user, messageContent, date);
         } else {
             console.error('Not connected to the SignalR hub');
         }
