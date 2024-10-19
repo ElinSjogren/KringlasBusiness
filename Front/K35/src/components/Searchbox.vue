@@ -1,7 +1,7 @@
 <template>
-<select class="form-control" @change="setCustomer">
+<select class="form-control" v-model="customer" @change="setCustomer">
   <option value="" disabled selected>Select your option</option>
-  <option v-for="customer in customersList" :value="customer">{{ customer.userName }} - {{ customer.userId }}</option>
+  <option v-for="customer in customersList" :key="customer.userId">{{ customer.userName }}</option>
 </select>
 </template>
 <script>
@@ -23,11 +23,9 @@ export default{
     ...mapState(useCustomersStore, ['customersList']),
   },
   methods:{
-    setCustomer(select){
-      const selectedCustomer = select.target.value; 
-      if (selectedCustomer) {
-        store.setCustomer(selectedCustomer);
-      }
+    setCustomer(){
+      const store = useCustomersStore();
+      store.setCustomer(this.customer);
     },
   },
   components:{ }

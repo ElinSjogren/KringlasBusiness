@@ -6,7 +6,7 @@ using J34.Hubs;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSignalR();
-
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -36,7 +36,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseCors();
-
+app.MapControllers();
 
 app.UseEndpoints(endpoints =>
 {

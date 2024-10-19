@@ -9,6 +9,7 @@
     </div>
     <div id="logedInAsBox" v-if="isLogedIn">
       <p>Inloggad som: {{this.user}}</p>
+      <button class="btn generallbtn" @click="logOut">Logga ut</button>
     </div>
     <NotLogedIn v-if="!adminLogedIn"></NotLogedIn>
     <LogedIn v-if="adminLogedIn"></LogedIn>
@@ -31,6 +32,11 @@ export default{
       const userStore = useChatStore(); 
       userStore.setUser(this.logedInAs);
       this.adminLogedIn = this.logedInAs.toLowerCase() === 'admin';
+    },
+    logOut(){
+      const userStore = useChatStore(); 
+      userStore.setUser(null);
+      this.adminLogedIn = false;
     }
   },
   computed:{
@@ -43,7 +49,9 @@ export default{
     let storedName = localStorage.getItem("userName");
     if(storedName){
       const userStore = useChatStore();
-      userStore.setUser(this.logedInAs);
+      userStore.setUser(storedName);
+      this.logedInAs=storedName
+      this.adminLogedIn = this.logedInAs.toLowerCase() === 'admin';
     }
 
   },
