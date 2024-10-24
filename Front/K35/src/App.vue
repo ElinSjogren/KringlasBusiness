@@ -5,14 +5,14 @@
     </header>
     <h4>Vädret:</h4>
     <WeatherBox></WeatherBox>
-    <h4>Chat: </h4>
+    <h4>Chatt: </h4>
     <Chatbox></Chatbox>
   </div>
 </template>
 <script>
 import Chatbox from './components/chatbox.vue';
 import WeatherBox from './components/WeatherBox.vue';
-import { useWeatherStore } from './stores/useWatherStore';
+import { useWeatherStore } from './stores/useWeatherStore';
 export default{
   data(){
     return {
@@ -27,7 +27,7 @@ export default{
   },  
   mounted(){
     const weatherStore = useWeatherStore();
-    weatherStore.getAllWeathers(); 
+    weatherStore.reciveWeatha(); 
   },
   components:{
     Chatbox,

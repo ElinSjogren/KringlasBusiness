@@ -2,7 +2,8 @@
   <div id="message">
     <div id="innermessage">
       <h6>{{ message.user }}: </h6>
-      <p>{{ message.messageContent }}<span>{{ message.date }}</span></p>
+      <p>{{ message.messageContent }}</p>
+      <p>{{ message.date }}</p>
     </div>
   </div>
 </template>

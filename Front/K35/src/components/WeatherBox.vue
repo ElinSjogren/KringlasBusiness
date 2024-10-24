@@ -5,7 +5,7 @@
 </template>
 <script>
 import WeaterCard from './WeaterCard.vue';
-import { useWeatherStore } from '@/stores/useWatherStore';
+import { useWeatherStore } from '@/stores/useWeatherStore';
 import { mapState } from 'pinia';
 export default{
   data(){
