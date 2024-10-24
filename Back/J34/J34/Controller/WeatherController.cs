@@ -9,7 +9,7 @@ namespace J34.Controller
     public class WeatherController : ControllerBase
     {
      
-        private static readonly string[] Summaries = new[]
+        private static readonly string[] Descriptions = new[]
         {
             "Kraftigt regn",
             "Frysande regn",
@@ -29,20 +29,18 @@ namespace J34.Controller
         }
 
         [HttpGet]
-        public IEnumerable<Weather> Get()
+        public ActionResult<IEnumerable<Weather>> Get()
         {
-            return Enumerable
-                .Range(1, 5)
-                .Select(
-                    index =>
-                        new Weather
-                        {
-                            Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                            TemperatureC = Random.Shared.Next(-10, 40),
-                            Condition = Summaries[Random.Shared.Next(Summaries.Length)]
-                        }
-                )
-                .ToArray();
+            var weathers = Enumerable
+            .Range(1, 5)
+            .Select(index => new Weather
+            {
+                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
+                TemperatureC = Random.Shared.Next(-10, 40),
+                Condition = Descriptions[Random.Shared.Next(Descriptions.Length)]
+            })
+            .ToArray();
+            return Ok(weathers);
         }
     }
 }
