@@ -9,7 +9,7 @@ builder.Services.AddSignalR();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddHttpClient();
 
 builder.Services.AddCors(options =>
 {
@@ -17,6 +17,7 @@ builder.Services.AddCors(options =>
     {
         builder
             .WithOrigins("http://localhost:5173") 
+            .WithOrigins("https://localhost:7053/") 
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials(); 
@@ -38,9 +39,7 @@ app.UseHttpsRedirection();
 app.UseCors();
 app.MapControllers();
 
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapHub<ChatHub>("/chathub");
-});
+app.MapHub<ChatHub>("/chathub");
+app.MapHub<WeatherHub>("/weatherhub");
 
 app.Run();
